@@ -2,7 +2,7 @@
 
 ## Java Space Invaders
 
-Apenas uma recriação do clássico jogo Space Invaders em Java<br>[Sprites usados](https://opengameart.org/content/assets-for-a-space-invader-like-game)<br>[Música e efeitos sonoros usados](https://classicgaming.cc/classics/space-invaders/sounds)
+Apenas uma recriação do clássico jogo Space Invaders em Java<br>[Sprites usados](https://opengameart.org/content/assets-for-a-space-invader-like-game)<br>[Música e efeitos sonoros usados](https://classicgaming.cc/classics/space-invaders/sounds)<br>[Música usada](https://youtu.be/k9oyDTR0EwQ?si=b7hNjiBCtmwPjvET)
 
 ### Novidades da V2
 
@@ -18,7 +18,7 @@ maiúscula), há um exemplo em `assets/controlsExmaple.png`
 
 ## Java Space Invaders
 
-Just a recreation of the classic Space Invaders game in Java<br>[Sprites used](https://opengameart.org/content/assets-for-a-space-invader-like-game)<br>[Music and sound effects used](https://classicgaming.cc/classics/space-invaders/sounds)
+Just a recreation of the classic Space Invaders game in Java<br>[Sprites used](https://opengameart.org/content/assets-for-a-space-invader-like-game)<br>[Sound effects used](https://classicgaming.cc/classics/space-invaders/sounds)<br>[Music used](https://youtu.be/k9oyDTR0EwQ?si=b7hNjiBCtmwPjvET)
 
 ### What's New in V2
 
