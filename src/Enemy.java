@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.io.FileWriter;
 import java.util.Random;
 
 public class Enemy {
@@ -41,9 +42,10 @@ public class Enemy {
                 app.boolet.setLocation(this.enemy[i].getX(), this.enemy[i].getY());
                 this.enemy[i].setLocation(positions[ramPose], -50);
                 this.app.score += 10;
-                this.app.status.setText("<html>Status<br> Score: " + app.score + " <br>Lifes:</html>");
+                app.status.setText("<html>Status<br> Score: " + app.score + "<br>HS: " + app.highScore + "<br>Lifes:</html>");
                 this.app.tela.repaint();
                 this.app.tela.revalidate();
+                Music.playSoundEffect("shoot.wav");
                 break;
             }
         }
@@ -63,6 +65,7 @@ public class Enemy {
         app.tela.revalidate();
 
         if (this.enemy[selectEn].getY() > 440) {
+            Music.playSoundEffect("passed.wav");
             this.app.health --;
 
             switch (this.app.health) {
@@ -82,7 +85,19 @@ public class Enemy {
             this.app.tela.revalidate();
 
             if (this.app.health == 0) {
-                JOptionPane.showMessageDialog(null, "Game Over", "Space Invaders", JOptionPane.WARNING_MESSAGE);
+                Music.playSoundEffect("explosion.wav");
+                if (app.score > app.highScore) {
+                    try {
+                        FileWriter fw = new FileWriter("assets/highScore");
+                        fw.write(String.valueOf(app.score));
+                        fw.close();
+                        app.mensagemFinal = "Nova pontuação máxima! " + app.score;
+                    } catch (Exception _) {}
+                } else {
+                    app.mensagemFinal = "Sua pontuação " + app.score;
+                }
+
+                JOptionPane.showMessageDialog(null, "Game Over\n" + app.mensagemFinal, "Space Invaders", JOptionPane.WARNING_MESSAGE);
                 System.exit(0);
             }
         }
