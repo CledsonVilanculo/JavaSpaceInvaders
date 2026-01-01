@@ -9,7 +9,7 @@ Apenas uma recriação do clássico jogo Space Invaders em Java<br>[Sprites usad
 - Agora o jogo funciona com teclado (para trocar as teclas é só modificar o ficheiro em `assets/controls`), apenas irá reconhecer as teclas escolhidas se usar o sistema de KeyBlinding do Java (se for uma letra apenas coloque ela
 maiúscula), há um exemplo em `assets/controlsExmaple.png`
 
-- Agora o jogo tem música de fundo e efeitos sonoros, obrigado [Classic Gaming](https://classicgaming.cc/)
+- Agora o jogo tem efeitos sonoros, obrigado [Classic Gaming](https://classicgaming.cc/)
 
 - Agora o jogo salva a pontuação máxima
 
@@ -24,7 +24,7 @@ Just a recreation of the classic Space Invaders game in Java<br>[Sprites used](h
 
 - The game now works with a keyboard (to change the keys, just modify the file in `assets/controls`), it will only recognize the chosen keys if you use Java's KeyBlinding system (if it's a letter, just capitalize it), there's an example in `assets/controlsExmaple.png`
 
-- The game now has background music and sound effects, thanks [Classic Gaming](https://classicgaming.cc/)
+- The game now has sound effects, thanks [Classic Gaming](https://classicgaming.cc/)
 
 - The game now saves the high score
 
